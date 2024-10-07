@@ -1,0 +1,72 @@
+.modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+  }
+  
+  .modal-content {
+    display: flex;
+    flex-direction: column;
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+  }
+
+  .modal.show {
+    display: block; 
+  }
+  
+  .close {
+    align-self: flex-end;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .modal-content form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .modal-content button {
+    margin-top: 10px;
+  }
+  
+  .modal-content h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .modal-footer {
+    display: flex;
+    justify-content: space-between;
+  }
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] { 
+  background-color: #f7f7f7; 
+  border-radius: 5px; 
+  border: 1px solid #ddd; 
+  padding: 10px;
+  margin-bottom: 10px; 
+
+  outline: none; 
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus {
+  box-shadow: 0 0 5px rgba(81, 203, 238, 1); 
+  border: 1px solid rgba(81, 203, 238, 1); 
+}
